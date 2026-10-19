@@ -1,0 +1,42 @@
+html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+
+      display: flex;
+      flex-direction: column;
+    }
+
+    .chat-header {
+      display: flex;
+      align-items: center;
+      padding: 10px;
+      background-color: #0e1031;
+      color: #2f6bcc;
+       border-bottom: 1px solid #ffffff; /* linha branca e fina */
+
+    }
+
+    .chat-header .logo {
+      height: 60px;
+      margin-right: 10px;
+    }
+
+    .chat-title {
+      font-size: 2em;
+      font-weight: bold;
+    }
+
+
+.escopo {
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #0e1031;
+  color: #ffffff;
+  text-align: center;
+  font-size: 1rem;
+  padding: 30px;
+}

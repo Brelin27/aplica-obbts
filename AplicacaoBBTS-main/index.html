@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ChatBBTS</title>
+  <link rel="stylesheet" href="./style.css" />
+  
+</head>
+
+<body>
+
+  <!-- Cabeçalho do chat -->
+  <div class="chat-header">
+    <img src="./logo.png" alt="Logo BBTS" class="logo" />
+    <span class="chat-title">ChatBBTS</span>
+  </div>
+
+  <!-- Área de mensagens (rolável) -->
+  <div class="chat-body" #chatBody>
+    <div class="message bot">
+      <p>
+        <strong>Maurício Gabriel</strong><br />
+        Boa noite, Mauri Almeida de Lima. Seu atendimento será registrado sob o
+        N° 0000000000. Meu nome é Maurício Gabriel e estou aqui para te auxiliar!
+        <br /><br />
+        Por favor, me confirme: Nome completo, CPF (somente números), telefone
+        (com DDD) e e-mail para continuar o atendimento. Em que posso te ajudar?
+      </p>
+      <span class="timestamp">22/03/2025 &nbsp; 7:20PM</span>
+    </div>
+
+    <div class="message user">
+      <p>
+        Mauri Almeida de Lima<br />
+        00000000000<br />
+        81940028922<br />
+        mauri@fakemail.com<br /><br />
+        Estou sem acesso à minha conta.
+      </p>
+      <span class="timestamp">22/03/2025 &nbsp; 7:23PM</span>
+    </div>
+  </div>
+
+  <!-- Campo de envio -->
+  <div class="chat-input">
+    <input
+      type="text"
+      placeholder="Digite uma mensagem"
+      [(ngModel)]="newMessage"
+      (keyup.enter)="sendMessage()"
+    />
+    <button (click)="sendMessage()">Enviar</button>
+  </div>
+
+</body>
+</html>

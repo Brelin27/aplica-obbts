@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ChatBBTS - Atendimento</title>
+  <link rel="stylesheet" href="chat.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Cabeçalho superior com logo, título, ícones e perfil -->
+  <header class="app-header">
+    <div class="header-left">
+      <img src="./logo.png" alt="Logo BBTS" class="logo" />
+      <span class="app-title">ChatBBTS</span>
+    </div>
+    <div class="header-icons">
+      <button class="icon-btn" aria-label="Buscar">🔍</button>
+      <button class="icon-btn" aria-label="Mais opções">⋮</button>
+      <img src="./image/perfil.png" alt="Foto do usuário" class="header-profile" />
+    </div>
+  </header>
+
+  <div class="chat-container">
+    <!-- Barra lateral esquerda -->
+    <aside class="sidebar">
+      <div class="sidebar-header">
+        <input type="text" placeholder="Buscar" class="search-input" />
+      </div>
+      <ul class="client-list">
+        <li class="client active">
+          <strong>Cliente 4</strong><br />
+          <span>Boa noite! Não consigo acessar minha conta desde...</span>
+          <span class="timestamp">7:23PM</span>
+        </li>
+        <li class="client">
+          <strong>Cliente 3</strong><br />
+          <span>Preciso de ajuda para recuperar minha co...</span>
+          <span class="timestamp">7:23PM</span>
+        </li>
+        <li class="client">
+          <strong>Cliente 2</strong><br />
+          <span>Poderia me ajudar?</span>
+          <span class="timestamp">7:23PM</span>
+        </li>
+        <li class="client">
+          <strong>Cliente 1</strong><br />
+          <span>Estou enfrentando problemas ao ace...</span>
+          <span class="timestamp">7:23PM</span>
+        </li>
+        <li class="client">
+          <strong>Cliente 5</strong><br />
+          <span>Obrigada por resolver meu problema!</span>
+          <span class="timestamp">7:23PM</span>
+        </li>
+      </ul>
+    </aside>
+
+    <!-- Painel de conversa -->
+    <main class="chat-panel">
+      <div class="conversation-header">
+        <h2>Cliente 4</h2>
+        <span class="status">visto recentemente</span>
+      </div>
+
+      <div class="chat-message">
+        <p>Boa noite! Não consigo acessar minha conta desde a semana passada. Poderia me ajudar por favor?</p>
+        <span class="message-time">7:20PM</span>
+      </div>
+
+      <!-- Campo de mensagem -->
+      <form class="message-form" action="#" method="post">
+        <input type="text" placeholder="Digite sua mensagem..." class="message-input" required />
+        <button type="submit" class="send-btn">Enviar</button>
+      </form>
+    </main>
+  </div>
+</body>
+</html>
